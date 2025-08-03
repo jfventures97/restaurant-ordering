@@ -40,3 +40,15 @@ header h2 {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.menuitems {
+    display: flex;
+    gap: 20px;
+    margin : 0;
+}
+
+.menuitems h1,
+.menuitems h2,
+.menuitems h3 {
+  margin: 0;
+}
