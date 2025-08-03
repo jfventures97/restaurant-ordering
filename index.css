@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+
+} 
+
+.app-container {
+    width: 600px;
+    height: 1161px;
+    margin: auto auto;
+}
+
+header{
+background-image: url('images/burger.jpg');
+background-size: cover;
+background-position: center;
+width: 554px;
+height: 167px;
+padding-top: 46px;
+}
+
+
+.headerfont {
+    color : #FFFFFF;
+     font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+    
+header h1 {
+    font-size: 39px;
+    margin-top: 0;
+    margin-left: 46px;
+    margin-bottom: 19px;
+}
+
+header h2 {
+    font-size: 22.42px;
+     margin-left: 46px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
