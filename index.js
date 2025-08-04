@@ -7,6 +7,7 @@ console.log(menuArray)
 
 const menuData= menuArray.map(menu => {
   return `
+  <div class="menuOuter">
   <div class="menuitems">
   
   <div class="emoji"> ${menu.emoji} </div>
@@ -15,7 +16,8 @@ const menuData= menuArray.map(menu => {
     <h2 class="menuingredients headerfont">${menu.ingredients}</h2>
     <h3 class= "menuprice headerfont">${menu.price}</h3>
     </div>
-    <div> <i class="fa-solid fa-plus"></i></div>
+    <div class="symbolsection"> <i class="fa-solid fa-plus symbol"></i></div>
+    </div>
     </div> `}).join('')
 
 menuContainer.innerHTML = menuData;

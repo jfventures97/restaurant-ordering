@@ -1,12 +1,14 @@
 body {
     margin: 0;
+    background-color: #DEDEDE;
 
 } 
 
 .app-container {
     width: 600px;
     height: 1161px;
-    margin: auto auto;
+    margin: 0 auto;
+    
 }
 
 header{
@@ -17,6 +19,7 @@ width: 554px;
 height: 167px;
 padding-top: 46px;
 color : #FFFFFF;
+margin: 0  auto;
 }
 
 
@@ -41,12 +44,24 @@ header h2 {
     margin-bottom: 0;
 }
 
+
+.menuOuter {
+ width: 554px;
+ margin: 0 auto;
+ background-color:  #FFFFFF;
+}
+
 .menuitems {
     display: flex;
     gap: 20px;
-    margin : 0;
-    width: 508px;
+    margin : 0 auto;
+    padding: 20px 0 20px 0;
+    width: 85%;
+    max-width: 490px; /* Optional: to mimic the image's tighter layout */
     height: 140px;
+    border-bottom: 2px solid #DEDEDE;
+    background-color:  #FFFFFF;
+    
      
   align-items: center;
 }
@@ -82,4 +97,19 @@ header h2 {
 .menudetails {
     margin-left: 0;
     padding-left: 0;
+    width: 358px;
+
+}
+
+.symbol { 
+    border: 1px solid #DEDEDE; /* Example border */
+  border-radius: 35px; /* Example radius for all corners */
+   padding: 17px; 
+   
+}
+
+.symbolsection {
+    width: 50px;
+    margin: 0;
+
 }
