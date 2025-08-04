@@ -114,10 +114,34 @@ header h2 {
 
 }
 
-.pricecontainer {
+.ordersection {
     width: 508px;
     height: 319px;
     background-color:  #FFFFFF;
     margin: 0 auto;
     padding: 23px;
 }
+
+.fontsize28 {
+    font-size: 28px;
+}
+
+.ordersection {
+    font-size: 28px;
+     font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 508px;
+
+}
+
+.ordersection h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.totalpricecontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
