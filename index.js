@@ -54,13 +54,33 @@ function renderCart() {
     const itemTotal = item.price*item.quantity;
     total+=itemTotal;
 
-    currentCart.innerHTML += `
+   currentCart.innerHTML += `
       <div class="cartcontent">
-        <p>${item.name} x${item.quantity} </p> 
-        <p>$${item.price * item.quantity}</p>
+        <p>${item.name} x${item.quantity} 
+          <span class="remove-button" data-id="${item.id}" style="cursor: pointer; color: red;">remove</span>
+        </p> 
+        <p>$${itemTotal}</p>
       </div>
     `;
-
-    totalPrice.innerHTML = `$${total}`
   });
+
+    totalPrice.innerHTML = `$${total}`;
+  }
+
+
+
+currentCart.addEventListener('click', function (e) {
+  if (e.target.classList.contains('remove-button')) {
+    const idToRemove = Number(e.target.dataset.id);
+    removeFromCart(idToRemove);
+  }
+});
+
+function removeFromCart(id) {
+  const index = cart.findIndex(item => item.id === id);
+
+  if (index !== -1) {
+    cart.splice(index, 1); // Remove the item from the array
+    renderCart(); // Re-render the cart
+  }
 }
