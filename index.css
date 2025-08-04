@@ -155,3 +155,12 @@ header h2 {
     font-weight: 700;
     border: none;
 }
+
+.cartcontent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartcontent p {
+    margin: 0;
+}

@@ -22,12 +22,45 @@ const menuData= menuArray.map(menu => {
 
 menuContainer.innerHTML = menuData;
 
-
+const cart = [];
+const currentCart = document.getElementById('cart-items')
 const symbolButtons = document.querySelectorAll('.symbolsection')
+const totalPrice = document.getElementById ('totalprice')
 
 symbolButtons.forEach(button => {
     button.addEventListener('click',() => {
-      console.log('You have clicked a button!')
+      const menuItem = button.closest('.menuitems');
+      const id= Number(menuItem.dataset.id);
+
+      const clickedItem = menuArray.find( item => item.id === id);
+
+      addToCart(clickedItem);
     })
 })
 
+function addToCart(item) {
+  const existing = cart.find(i => i.id === item.id);
+  existing? existing.quantity++ : cart.push({ ... item, quantity : 1});
+  renderCart();
+} 
+
+
+
+function renderCart() {
+  currentCart.innerHTML = ''; // clear
+  let total = 0;
+
+  cart.forEach(item => {
+    const itemTotal = item.price*item.quantity;
+    total+=itemTotal;
+
+    currentCart.innerHTML += `
+      <div class="cartcontent">
+        <p>${item.name} x${item.quantity} </p> 
+        <p>$${item.price * item.quantity}</p>
+      </div>
+    `;
+
+    totalPrice.innerHTML = `$${total}`
+  });
+}
