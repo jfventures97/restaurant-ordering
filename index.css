@@ -116,7 +116,7 @@ header h2 {
 
 .ordersection {
     width: 470.881px;
-    height: 319px;
+    min-height: 319px;
     background-color:  #FFFFFF;
     margin: 0 auto;
     padding: 20px 42px 20px 40px;
