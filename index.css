@@ -113,3 +113,11 @@ header h2 {
     margin: 0;
 
 }
+
+.pricecontainer {
+    width: 508px;
+    height: 319px;
+    background-color:  #FFFFFF;
+    margin: 0 auto;
+    padding: 23px;
+}
