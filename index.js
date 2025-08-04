@@ -8,7 +8,7 @@ console.log(menuArray)
 const menuData= menuArray.map(menu => {
   return `
   <div class="menuOuter">
-  <div class="menuitems">
+  <div class="menuitems" data-id="${menu.id}">
   
   <div class="emoji"> ${menu.emoji} </div>
   <div class="menudetails">
@@ -31,8 +31,3 @@ symbolButtons.forEach(button => {
     })
 })
 
-// document.querySelectorAll('.symbolsection').forEach(button => {
-//   button.addEventListener('click', function(){
-//     console.log('Plus button Clicked!');
-//   });
-// });
