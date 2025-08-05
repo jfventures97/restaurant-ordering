@@ -89,6 +89,7 @@ function removeFromCart(id) {
 const submitPayment = document.getElementById ('completebutton');
 
 submitPayment.addEventListener('click',()=> {
-  document.querySelector('.popup').style.display = 'block';
+  cart.length>0? document.querySelector('.popup').style.display = 'block' : console.log("Your cart is empty!");
+  
 })
 
