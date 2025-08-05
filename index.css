@@ -176,7 +176,7 @@ header h2 {
 
 
 .popup {
-    display: none;
+display: none;
 width: 524px;
 height: 542px;
 background-color: #FFFFFF;
@@ -185,8 +185,9 @@ text-align: center;
 border-radius: 4px;
 position:fixed;
  z-index: 1001;
- top: 20%;
-  left: 22%;
+ top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* pulls it back by half its own size */
  box-shadow: 0 0 40px  rgba(0, 0, 0, 0.5);
 }
 
@@ -225,5 +226,6 @@ position:fixed;
     color: #FFFFFF;
      font-size: 24px;
      font-weight: 700;
-     margin-top: 46px;
+     margin-top: 30px;
+    
 }
