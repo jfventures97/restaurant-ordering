@@ -15,7 +15,7 @@ header{
 background-image: url('images/burger.jpg');
 background-size: cover;
 background-position: center;
-width: 554px;
+width: 600px;
 height: 167px;
 padding-top: 46px;
 color : #FFFFFF;
@@ -46,7 +46,7 @@ header h2 {
 
 
 .menuOuter {
- width: 554px;
+ width: 100%;
  margin: 0 auto;
  background-color:  #FFFFFF;
 }
@@ -115,7 +115,7 @@ header h2 {
 }
 
 .ordersection {
-    width: 470.881px;
+    width: 86.2%;
     min-height: 319px;
     background-color:  #FFFFFF;
     margin: 0 auto;
