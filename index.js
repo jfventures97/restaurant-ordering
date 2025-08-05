@@ -86,3 +86,9 @@ function removeFromCart(id) {
 }
 
 
+const submitPayment = document.getElementById ('completebutton');
+
+submitPayment.addEventListener('click',()=> {
+  document.querySelector('.popup').style.display = 'block';
+})
+
