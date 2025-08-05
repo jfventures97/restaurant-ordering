@@ -84,3 +84,5 @@ function removeFromCart(id) {
     renderCart(); // Re-render the cart
   }
 }
+
+
